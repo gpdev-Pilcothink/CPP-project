@@ -51,5 +51,6 @@ int main() {
 		gamemain gotomain; ///메인화면으로 이동
 		gotomain.run(&cha);  //메인화면으로 가면서 cha의 주소를 넘겨버림
 	}
+	f.gotoxy(0, 28);
 	return 0;
 }

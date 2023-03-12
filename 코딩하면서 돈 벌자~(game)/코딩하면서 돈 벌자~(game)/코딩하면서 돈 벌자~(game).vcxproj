@@ -140,14 +140,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="character.cpp" />
+    <ClCompile Include="Company.cpp" />
     <ClCompile Include="function.cpp" />
     <ClCompile Include="gamemain.cpp" />
+    <ClCompile Include="house.cpp" />
     <ClCompile Include="start.cpp" />
+    <ClCompile Include="store.cpp" />
+    <ClCompile Include="Storepurchase.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="character.h" />
+    <ClInclude Include="Company.h" />
     <ClInclude Include="function.h" />
     <ClInclude Include="gamemain.h" />
+    <ClInclude Include="house.h" />
+    <ClInclude Include="store.h" />
+    <ClInclude Include="Storepurchase.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

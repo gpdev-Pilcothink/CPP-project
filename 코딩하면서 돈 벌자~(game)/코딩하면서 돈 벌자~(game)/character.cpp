@@ -81,6 +81,55 @@ void character::make() {
 	return;
 }
 //캐릭터 생성 부분 끝
+int character::RETURN_money() {
+	return money;
+}
+int character::RETURN_stress() {
+	return stress;
+}
+int character::RETURN_hungry() {
+	return hungry;
+}
+int character::RETURN_tired() {
+	return tired;
+}
+string character::RETURN_name() {
+	return name;
+}
+int character::RETURN_ability() {
+	return ability;
+}
+//캐릭터 요소를 다루는 클래스
+void character::EARN_money() {
+	money += ability;
+}
+void character::EARN_hungrymoney() {
+	money += ability/100;
+}
+void character::DOWN_hungry() {
+	hungry--;
+}
+void character::DOWN_tired() {
+	tired--;
+
+}
+void character::DOWN_money(int money) {
+	this->money -= money;
+}
+void character::UP_hungry() {
+	hungry += 10;
+}
+void character::UP_tired() {
+	tired += 1;
+
+}
+void character::UP_ability() {
+	ability += 1000;
+
+}
+void character::DEFAULT_tired() {
+	tired = 100;
+}
 
 character::~character() { //캐릭터 소멸자
 }
